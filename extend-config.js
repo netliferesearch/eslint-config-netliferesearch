@@ -3,11 +3,11 @@
 var merge = require('lodash.merge');
 
 var overrideConfig = {
-  rules: {
-    indent: ['error', 4]
-  }
+    rules: {
+        indent: ['error', 4]
+    }
 };
 
 module.exports = function extendConfig(config) {
-  return merge({}, config, overrideConfig);
+    return merge({}, config, overrideConfig);
 };
