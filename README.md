@@ -1,5 +1,8 @@
 # eslint-config-netliferesearch
-This package provides ESLint configs used in Netlife Research projects. The configurations are based on eslint-config-airbnb only differs on the tab size.
+This package provides ESLint configs used in Netlife Research projects. The configurations are based on eslint-config-airbnb only differs on the tab size, using four space soft tabs.
+
+For more details on the rules and how to work with the standard and ESLint itself see [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
+the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files).
 
 ## Installations
 First, add `eslint`, `eslint-plugin-import` to your project by running
