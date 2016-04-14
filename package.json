@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-netliferesearch",
+  "version": "1.0.1",
+  "description": "ESLint config for Netlife Research projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netliferesearch/eslint-config-netliferesearch.git"
+  },
+  "keywords": [
+    "eslint",
+    "Netlife Research"
+  ],
+  "author": "Kristoffer Brabrand <kristoffer@brabrand.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netliferesearch/eslint-config-netliferesearch/issues"
+  },
+  "homepage": "https://github.com/netliferesearch/eslint-config-netliferesearch#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^7.0.0",
+    "lodash.merge": "^4.3.5"
+  }
+}
