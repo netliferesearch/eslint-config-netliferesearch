@@ -31,3 +31,17 @@ The default configuration (`netliferesearch`) expects your project to use the ne
 
 * `netliferesearch/legacy` - A config for ES5 style projects.
 * `netliferesearch/react` - A config for React+ES6/2015 projects.
+
+## Configuration extensions
+Extensions is used to alter the behavior in a consistent way across project, and reducing the need for overriding the standard in the `.eslintrc` file.
+
+The extensions are not standards by them selves, but must be used in combination with one of the standards. When doing so, the `extends` key in the `.eslintrc` file is provided an array instead of a string, like this:
+
+```json
+{
+  "extends": ["netliferesearch", "netliferesearch/angular"]
+}
+```
+
+### Available extensions
+* `netliferesearch/angular` - Disable rules that goes against the angular way of modifying the $scope.
