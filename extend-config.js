@@ -5,7 +5,7 @@ var merge = require('lodash.merge');
 var overrideConfig = {
     rules: {
         indent: ['error', 4],
-        'react/jsx-indent': ['error', 4]
+        'react/jsx-indent': [2, 4]
     }
 };
 
