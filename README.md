@@ -5,20 +5,22 @@ For more details on the rules and how to work with the standard and ESLint itsel
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files).
 
 ## Installations
-First, add `eslint`, `eslint-plugin-import` to your project by running
+First, add the Netlife eslint and its peer dependencies to your project by executing the following command in your terminal;
 
 ```sh
-npm install --save-dev eslint eslint-plugin-import
+(
+  export PKG=eslint-config-netliferesearch;
+  npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
+)
 ```
 
-Then add the config itself by installing `eslint-config-netliferesearch`:
+Which produces and runs a command like:
 
 ```sh
-npm install --save-dev eslint-config-netliferesearch
+npm i --save-dev eslint-config-netliferesearch eslint@^3.2.2 eslint-plugin-import@^1.12.0 eslint-plugin-jsx-a11y@^2.0.1 eslint-plugin-react@^6.0.0
 ```
 
-## Usage
-In order for eslint to lint your file using the config, you need to add an `.eslintrc` to the root of your project:
+Then create an `.eslintrc` file in the root of your project:
 
 ```json
 {
